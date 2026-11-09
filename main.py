@@ -5,6 +5,7 @@ from validate.validate_book import BookValidator
 from business.clients_functionalities import ClientController
 from repository.client_repository import ClientRepository
 from validate.validate_client import ClientValidator
+from tests.all_tests import RunTests
 
 
 def run():
@@ -37,4 +38,6 @@ def run():
         else:
             print("Unknown command.")
 
+run_tests = RunTests()
+run_tests.run_all_tests()
 run()
